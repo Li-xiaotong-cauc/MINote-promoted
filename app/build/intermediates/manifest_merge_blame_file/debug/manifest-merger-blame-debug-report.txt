@@ -1,0 +1,173 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright (c) 2010-2011, The MiCode Open Source Community (www.micode.net)
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8
+9          http://www.apache.org/licenses/LICENSE-2.0
+10
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="net.micode.notes"
+19    android:versionCode="1"
+20    android:versionName="0.1" >
+21
+22    <uses-sdk
+22-->D:\Notes-master\app\src\main\AndroidManifest.xml:23:5-44
+23        android:minSdkVersion="14"
+23-->D:\Notes-master\app\src\main\AndroidManifest.xml:23:15-41
+24        android:targetSdkVersion="29" />
+24-->D:\Notes-master\app\src\main\AndroidManifest.xml:23:5-44
+25
+26    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+26-->D:\Notes-master\app\src\main\AndroidManifest.xml:25:5-81
+26-->D:\Notes-master\app\src\main\AndroidManifest.xml:25:22-78
+27    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+27-->D:\Notes-master\app\src\main\AndroidManifest.xml:26:5-88
+27-->D:\Notes-master\app\src\main\AndroidManifest.xml:26:22-85
+28
+29    <application
+29-->D:\Notes-master\app\src\main\AndroidManifest.xml:28:5-95:19
+30        android:name="net.micode.notes.app.NotesApp"
+30-->D:\Notes-master\app\src\main\AndroidManifest.xml:32:9-53
+31        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+31-->[androidx.core:core:1.3.2] D:\小米便签\gradle\caches\transforms-3\31036299c0170d146de36d012201f932\transformed\core-1.3.2\AndroidManifest.xml:24:18-86
+32        android:debuggable="true"
+33        android:icon="@drawable/icon_app"
+33-->D:\Notes-master\app\src\main\AndroidManifest.xml:29:9-42
+34        android:label="@string/app_name"
+34-->D:\Notes-master\app\src\main\AndroidManifest.xml:30:9-41
+35        android:usesCleartextTraffic="true" >
+35-->D:\Notes-master\app\src\main\AndroidManifest.xml:31:9-44
+36        <uses-library
+36-->D:\Notes-master\app\src\main\AndroidManifest.xml:34:9-87
+37            android:name="org.apache.http.legacy"
+37-->D:\Notes-master\app\src\main\AndroidManifest.xml:34:23-60
+38            android:required="false" />
+38-->D:\Notes-master\app\src\main\AndroidManifest.xml:34:61-85
+39
+40        <activity
+40-->D:\Notes-master\app\src\main\AndroidManifest.xml:36:9-48:20
+41            android:name="net.micode.notes.ui.NotesListActivity"
+41-->D:\Notes-master\app\src\main\AndroidManifest.xml:37:13-49
+42            android:configChanges="keyboardHidden|orientation|screenSize"
+42-->D:\Notes-master\app\src\main\AndroidManifest.xml:38:13-74
+43            android:label="@string/app_name"
+43-->D:\Notes-master\app\src\main\AndroidManifest.xml:39:13-45
+44            android:launchMode="singleTop"
+44-->D:\Notes-master\app\src\main\AndroidManifest.xml:40:13-43
+45            android:theme="@style/NoteTheme"
+45-->D:\Notes-master\app\src\main\AndroidManifest.xml:41:13-45
+46            android:windowSoftInputMode="adjustPan" >
+46-->D:\Notes-master\app\src\main\AndroidManifest.xml:42:13-52
+47            <intent-filter>
+47-->D:\Notes-master\app\src\main\AndroidManifest.xml:44:13-47:29
+48                <action android:name="android.intent.action.MAIN" />
+48-->D:\Notes-master\app\src\main\AndroidManifest.xml:45:17-69
+48-->D:\Notes-master\app\src\main\AndroidManifest.xml:45:25-66
+49
+50                <category android:name="android.intent.category.LAUNCHER" />
+50-->D:\Notes-master\app\src\main\AndroidManifest.xml:46:17-77
+50-->D:\Notes-master\app\src\main\AndroidManifest.xml:46:27-74
+51            </intent-filter>
+52        </activity>
+53        <activity
+53-->D:\Notes-master\app\src\main\AndroidManifest.xml:50:9-78:20
+54            android:name="net.micode.notes.ui.NoteEditActivity"
+54-->D:\Notes-master\app\src\main\AndroidManifest.xml:51:13-48
+55            android:configChanges="keyboardHidden|orientation|screenSize"
+55-->D:\Notes-master\app\src\main\AndroidManifest.xml:52:13-74
+56            android:launchMode="singleTop"
+56-->D:\Notes-master\app\src\main\AndroidManifest.xml:53:13-43
+57            android:theme="@style/NoteTheme" >
+57-->D:\Notes-master\app\src\main\AndroidManifest.xml:54:13-45
+58            <intent-filter>
+58-->D:\Notes-master\app\src\main\AndroidManifest.xml:56:13-61:29
+59                <action android:name="android.intent.action.VIEW" />
+59-->D:\Notes-master\app\src\main\AndroidManifest.xml:57:17-69
+59-->D:\Notes-master\app\src\main\AndroidManifest.xml:57:25-66
+60
+61                <category android:name="android.intent.category.DEFAULT" />
+61-->D:\Notes-master\app\src\main\AndroidManifest.xml:58:17-76
+61-->D:\Notes-master\app\src\main\AndroidManifest.xml:58:27-73
+62
+63                <data android:mimeType="vnd.android.cursor.item/text_note" />
+63-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:17-78
+63-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:23-75
+64                <data android:mimeType="vnd.android.cursor.item/call_note" />
+64-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:17-78
+64-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:23-75
+65            </intent-filter>
+66            <intent-filter>
+66-->D:\Notes-master\app\src\main\AndroidManifest.xml:63:13-68:29
+67                <action android:name="android.intent.action.INSERT_OR_EDIT" />
+67-->D:\Notes-master\app\src\main\AndroidManifest.xml:64:17-79
+67-->D:\Notes-master\app\src\main\AndroidManifest.xml:64:25-76
+68
+69                <category android:name="android.intent.category.DEFAULT" />
+69-->D:\Notes-master\app\src\main\AndroidManifest.xml:58:17-76
+69-->D:\Notes-master\app\src\main\AndroidManifest.xml:58:27-73
+70
+71                <data android:mimeType="vnd.android.cursor.item/text_note" />
+71-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:17-78
+71-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:23-75
+72                <data android:mimeType="vnd.android.cursor.item/call_note" />
+72-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:17-78
+72-->D:\Notes-master\app\src\main\AndroidManifest.xml:59:23-75
+73            </intent-filter>
+74            <intent-filter>
+74-->D:\Notes-master\app\src\main\AndroidManifest.xml:70:13-73:29
+75                <action android:name="android.intent.action.SEARCH" />
+75-->D:\Notes-master\app\src\main\AndroidManifest.xml:71:17-71
+75-->D:\Notes-master\app\src\main\AndroidManifest.xml:71:25-68
+76
+77                <category android:name="android.intent.category.DEFAULT" />
+77-->D:\Notes-master\app\src\main\AndroidManifest.xml:58:17-76
+77-->D:\Notes-master\app\src\main\AndroidManifest.xml:58:27-73
+78            </intent-filter>
+79
+80            <meta-data
+80-->D:\Notes-master\app\src\main\AndroidManifest.xml:75:13-77:54
+81                android:name="android.app.searchable"
+81-->D:\Notes-master\app\src\main\AndroidManifest.xml:76:17-54
+82                android:resource="@xml/searchable" />
+82-->D:\Notes-master\app\src\main\AndroidManifest.xml:77:17-51
+83        </activity>
+84
+85        <provider
+85-->D:\Notes-master\app\src\main\AndroidManifest.xml:80:9-83:43
+86            android:name="net.micode.notes.data.NotesProvider"
+86-->D:\Notes-master\app\src\main\AndroidManifest.xml:81:13-63
+87            android:authorities="micode_notes"
+87-->D:\Notes-master\app\src\main\AndroidManifest.xml:82:13-47
+88            android:multiprocess="true" />
+88-->D:\Notes-master\app\src\main\AndroidManifest.xml:83:13-40
+89
+90        <activity
+90-->D:\Notes-master\app\src\main\AndroidManifest.xml:85:9-90:20
+91            android:name="net.micode.notes.ui.NotesPreferenceActivity"
+91-->D:\Notes-master\app\src\main\AndroidManifest.xml:86:13-71
+92            android:label="@string/preferences_title"
+92-->D:\Notes-master\app\src\main\AndroidManifest.xml:87:13-54
+93            android:launchMode="singleTop"
+93-->D:\Notes-master\app\src\main\AndroidManifest.xml:88:13-43
+94            android:theme="@android:style/Theme.Holo.Light" >
+94-->D:\Notes-master\app\src\main\AndroidManifest.xml:89:13-60
+95        </activity>
+96
+97        <meta-data
+97-->D:\Notes-master\app\src\main\AndroidManifest.xml:92:9-94:52
+98            android:name="android.app.default_searchable"
+98-->D:\Notes-master\app\src\main\AndroidManifest.xml:93:13-58
+99            android:value=".ui.NoteEditActivity" />
+99-->D:\Notes-master\app\src\main\AndroidManifest.xml:94:13-49
+100    </application>
+101
+102</manifest>

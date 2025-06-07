@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "net.micode.notes.app-mergeReleaseResources-3:/values-v16/values-v16.xml",
+            "map": [
+                {
+                    "source": "D:\\小米便签\\gradle\\caches\\transforms-3\\31036299c0170d146de36d012201f932\\transformed\\core-1.3.2\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
+                    }
+                },
+                {
+                    "source": "D:\\小米便签\\gradle\\caches\\transforms-3\\af310258920cf8caaadfccc0263d151f\\transformed\\appcompat-1.2.0\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                }
+            ]
+        }
+    ]
+}
